@@ -9,8 +9,15 @@ public class Unit_Converter{
         System.out.printf("5. Kelvin to Celsius\n");
         System.out.printf("6. Kelvin to Fahrenheit\n");
         Scanner in=new Scanner(System.in);
+        System.out.print("Enter the value(1 to 6)= ")
         double n;
         n=in.nextInt();
+        if(n==0 || n>6)
+        {
+         System.out.print("Invalid number entered")
+         }
+        else
+        {
 //------------------------------------------------------------------------------
                     // Celsius to Fahrenheit
         if(n==1)
@@ -96,6 +103,7 @@ public class Unit_Converter{
          }
         }
     }
+  }
 //------------------------------------------------------------------------------
                 // Celsius to Fahrenheit
         public static double CelsiustoFahrenheit(double Celsius)
