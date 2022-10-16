@@ -29,7 +29,7 @@ public class Unit_Converter{
              System.out.print("Enter the valid value!!!");
          }
          else{
-         System.out.print("Temperture ="+ CelsiustoFahrenheit(Celsius) + "°F");
+         System.out.print("Temperture ="+ CelsiustoFahrenheit(Celsius) + "F");
          }
         }
 //---------------------------------------------------------------------------         
@@ -43,7 +43,7 @@ public class Unit_Converter{
              System.out.print("Enter the valid value!!!");
          }
          else{
-         System.out.print("Temperture ="+ FahrenheittoCelsius(Fahrenheit) + "°C");
+         System.out.print("Temperture ="+ FahrenheittoCelsius(Fahrenheit) + "C");
          }
         }
 //------------------------------------------------------------------------------
@@ -85,7 +85,7 @@ public class Unit_Converter{
              System.out.print("Enter the valid value!!!");
          }
          else{
-         System.out.print("Temperture ="+ KelvintoCelsius(Kelvin) + "°C");
+         System.out.print("Temperture ="+ KelvintoCelsius(Kelvin) + "C");
          }
         }
 //------------------------------------------------------------------------------
@@ -99,7 +99,7 @@ public class Unit_Converter{
              System.out.print("Enter the valid value!!!");
          }
          else{
-         System.out.print("Temperture ="+ KelvintoFahrenheit(Kelvin) + "°F");
+         System.out.print("Temperture ="+ KelvintoFahrenheit(Kelvin) + "F");
          }
         }
     }
