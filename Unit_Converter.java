@@ -1,20 +1,29 @@
 import java.util.*;
 public class Unit_Converter{
-    public static void main(String args[])
-    {
+    public static void main(String args[]){
+        Scanner in=new Scanner(System.in);
+        int loop=1;
+        System.out.println("1. Calculate");
+        System.out.println("2. Exit");
+        System.out.print("Enter Value (1 to 2)= ");
+        loop=in.nextInt();
+        if(loop>2){
+            System.out.print("Enter Valid Number");
+        }
+        else{
+        while(loop==1){
         System.out.printf("1. Celsius to Fahrenheit\n");
         System.out.printf("2. Fahrenheit to Celsius\n");
         System.out.printf("3. Fahrenheit to Kelvin\n");
         System.out.printf("4. Celsius to Kelvin\n");
         System.out.printf("5. Kelvin to Celsius\n");
         System.out.printf("6. Kelvin to Fahrenheit\n");
-        Scanner in=new Scanner(System.in);
         System.out.print("Enter the value(1 to 6)= ");
         double n;
         n=in.nextInt();
         if(n==0 || n>6)
         {
-         System.out.print("Invalid number entered");
+         System.out.println("Invalid number entered");
          }
         else
         {
@@ -26,38 +35,38 @@ public class Unit_Converter{
          double Celsius=in.nextInt();
          if(Celsius==0)
          {
-             System.out.print("Enter the valid value!!!");
+             System.out.println("Enter the valid value!!!");
          }
          else{
-         System.out.print("Temperture ="+ CelsiustoFahrenheit(Celsius) + "F");
+         System.out.println("Temperture ="+ CelsiustoFahrenheit(Celsius) + "F");
          }
         }
 //---------------------------------------------------------------------------         
                     // Fahrenheit to Celsius
         else if(n==2)
         {
-         System.out.print("Enter the value of Temperature(Fahrenheit= )");
+         System.out.print("Enter the value of Temperature(Fahrenheit)= ");
          double Fahrenheit=in.nextInt();
           if(Fahrenheit==0)
          {
-             System.out.print("Enter the valid value!!!");
+             System.out.println("Enter the valid value!!!");
          }
          else{
-         System.out.print("Temperture ="+ FahrenheittoCelsius(Fahrenheit) + "C");
+         System.out.println("Temperture ="+ FahrenheittoCelsius(Fahrenheit) + "C");
          }
         }
 //------------------------------------------------------------------------------
                     // Fahrenheit  to Kelvin
         else if(n==3)
         {
-         System.out.print("Enter the value of Temperature(Fahrenheit= )");
+         System.out.print("Enter the value of Temperature(Fahrenheit)= ");
          double Fahrenheit=in.nextInt();
           if(Fahrenheit==0)
          {
-             System.out.print("Enter the valid value!!!");
+             System.out.println("Enter the valid value!!!");
          }
          else{
-         System.out.print("Temperture ="+ FahrenheittoKelvin(Fahrenheit) + "K");
+         System.out.println("Temperture ="+ FahrenheittoKelvin(Fahrenheit) + "K");
          }
         }
 //------------------------------------------------------------------------------
@@ -68,10 +77,10 @@ public class Unit_Converter{
          double Celsius=in.nextInt();
           if(Celsius==0)
          {
-             System.out.print("Enter the valid value!!!");
+             System.out.println("Enter the valid value!!!");
          }
          else{
-         System.out.print("Temperture ="+ CelsiustoKelvin(Celsius) + "K");
+         System.out.println("Temperture ="+ CelsiustoKelvin(Celsius) + "K");
          }
         }
 //-----------------------------------------------------------------------------
@@ -82,10 +91,10 @@ public class Unit_Converter{
          double Kelvin=in.nextInt();
          if(Kelvin==0)
          {
-             System.out.print("Enter the valid value!!!");
+             System.out.println("Enter the valid value!!!");
          }
          else{
-         System.out.print("Temperture ="+ KelvintoCelsius(Kelvin) + "C");
+         System.out.println("Temperture ="+ KelvintoCelsius(Kelvin) + "C");
          }
         }
 //------------------------------------------------------------------------------
@@ -96,14 +105,20 @@ public class Unit_Converter{
          double Kelvin=in.nextInt();
          if(Kelvin==0)
          {
-             System.out.print("Enter the valid value!!!");
+             System.out.println("Enter the valid value!!!");
          }
          else{
-         System.out.print("Temperture ="+ KelvintoFahrenheit(Kelvin) + "F");
+         System.out.println("Temperture ="+ KelvintoFahrenheit(Kelvin) + "F");
          }
         }
     }
+    System.out.println("1. Calculate");
+    System.out.println("2. Exit");
+    System.out.print("Enter Value (1 to 2)= ");
+    loop=in.nextInt();
+    }
   }
+}
 //------------------------------------------------------------------------------
                 // Celsius to Fahrenheit
         public static double CelsiustoFahrenheit(double Celsius)
@@ -140,5 +155,6 @@ public class Unit_Converter{
         {
             return 1.8*(Kelvin-273) + 32;
         }
+
 }
 
